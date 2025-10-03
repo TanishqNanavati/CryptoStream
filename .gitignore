@@ -1,0 +1,29 @@
+# Build artifacts
+*.o
+*.obj
+encrypt_decrypt
+cryption
+*.out
+*.a
+*.so
+*.dll
+*.exe
+
+# Editor / IDE
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Test files
+test/*.txt
+
+# Logs
+*.log
+*.tmp
