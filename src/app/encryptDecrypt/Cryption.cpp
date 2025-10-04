@@ -1,6 +1,7 @@
 #include "Cryption.hpp"
 #include "Task.hpp"
 #include "../filehandling/ReadEnv.cpp"
+#include<bits/stdc++.h>
 
 int executeCryption(const std::string &taskData){
     Task task = Task::fromString(taskData);
@@ -31,6 +32,10 @@ int executeCryption(const std::string &taskData){
         std::cout << "File decrypted successfully: " << task.filePath << std::endl;
 
     }
+
+    std::time_t t = std::time(nullptr);
+    std::tm * now  = std::localtime(&t);
+    std::cout<<"Exiting the Encryption/Decryption : "<<std::put_time(now,"%Y-%m-%d %H:%M:%S")<<std::endl;
 
     return 0;
 
